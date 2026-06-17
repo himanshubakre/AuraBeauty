@@ -1,0 +1,1506 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Aura Beauty Studio | Luxury Salon in Belapur CBD</title>
+
+    <meta
+      name="description"
+      content="Experience premium beauty treatments, bridal makeup, hair spa, skin care and luxury salon services at Aura Beauty Studio, Belapur CBD."
+    />
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="
+https://fonts.googleapis.com/css2?
+family=Playfair+Display:wght@600;700;800&
+family=Inter:wght@300;400;500;600;700&
+display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* ==========================
+      RESET
+========================== */
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        background: #fff9f5;
+        color: #1c1c1c;
+        font-family: "Inter", sans-serif;
+        overflow-x: hidden;
+      }
+
+      /* ==========================
+      VARIABLES
+========================== */
+
+      :root {
+        --cream: #fff9f5;
+
+        --rose: #d4a373;
+
+        --black: #1c1c1c;
+
+        --pink: #fadcd9;
+
+        --white: #ffffff;
+
+        --shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+      }
+
+      /* ==========================
+    GLOBAL STYLES
+========================== */
+
+      section {
+        padding: 90px 8%;
+      }
+
+      h1,
+      h2,
+      h3 {
+        font-family: "Playfair Display", serif;
+
+        line-height: 1.2;
+      }
+
+      h2 {
+        font-size: 42px;
+
+        margin-bottom: 18px;
+      }
+
+      p {
+        font-size: 16px;
+
+        line-height: 1.8;
+
+        color: #444;
+      }
+
+      .container {
+        max-width: 1400px;
+
+        margin: auto;
+      }
+
+      /* ==========================
+        BUTTONS
+========================== */
+
+      .btn {
+        display: inline-block;
+
+        background: var(--rose);
+
+        color: white;
+
+        padding: 15px 35px;
+
+        border-radius: 50px;
+
+        font-weight: 600;
+
+        text-decoration: none;
+
+        transition: 0.4s;
+
+        box-shadow: 0 10px 25px rgba(212, 163, 115, 0.4);
+      }
+
+      .btn:hover {
+        transform: translateY(-4px);
+
+        box-shadow: 0 20px 40px rgba(212, 163, 115, 0.5);
+      }
+
+      /* ==========================
+       NAVBAR
+========================== */
+
+      header {
+        position: fixed;
+
+        top: 0;
+
+        left: 0;
+
+        width: 100%;
+
+        z-index: 1000;
+
+        transition: 0.4s;
+      }
+
+      header.active {
+        background: rgba(255, 249, 245, 0.85);
+
+        backdrop-filter: blur(15px);
+
+        box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+      }
+
+      nav {
+        height: 80px;
+
+        padding: 0 8%;
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: space-between;
+      }
+
+      .logo {
+        font-size: 28px;
+
+        font-family: "Playfair Display";
+
+        font-weight: 800;
+
+        color: var(--black);
+      }
+
+      .logo span {
+        color: var(--rose);
+      }
+
+      .nav-btn {
+        font-size: 15px;
+      }
+
+      /* ==========================
+      HERO SECTION
+========================== */
+
+      .hero {
+        min-height: 100vh;
+
+        display: flex;
+
+        align-items: center;
+
+        padding-top: 80px;
+
+        background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+          url("https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=1600&q=80");
+
+        background-size: cover;
+
+        background-position: center;
+
+        color: white;
+      }
+
+      .hero-content {
+        max-width: 650px;
+
+        animation: fadeUp 1s ease;
+      }
+
+      .hero h1 {
+        font-size: 68px;
+
+        margin-bottom: 25px;
+      }
+
+      .hero p {
+        color: #eee;
+
+        font-size: 19px;
+
+        margin-bottom: 35px;
+
+        max-width: 550px;
+      }
+
+      .hero .btn {
+        background: white;
+
+        color: var(--black);
+      }
+
+      /* Hero Glass Card */
+
+      .hero-badge {
+        display: inline-block;
+
+        margin-bottom: 25px;
+
+        padding: 12px 25px;
+
+        border-radius: 50px;
+
+        background: rgba(255, 255, 255, 0.18);
+
+        backdrop-filter: blur(15px);
+
+        border: 1px solid rgba(255, 255, 255, 0.3);
+      }
+
+      @keyframes fadeUp {
+        from {
+          opacity: 0;
+
+          transform: translateY(40px);
+        }
+
+        to {
+          opacity: 1;
+
+          transform: translateY(0);
+        }
+      }
+      /* ==========================
+    RESPONSIVE DESIGN
+========================== */
+
+      @media (max-width: 900px) {
+        section {
+          padding: 75px 6%;
+        }
+
+        h2 {
+          font-size: 34px;
+        }
+
+        .hero h1 {
+          font-size: 48px;
+        }
+
+        .hero p {
+          font-size: 17px;
+        }
+      }
+
+      @media (max-width: 600px) {
+        nav {
+          height: 70px;
+          padding: 0 5%;
+        }
+
+        .logo {
+          font-size: 22px;
+        }
+
+        .btn,
+        .nav-btn {
+          padding: 12px 22px;
+          font-size: 14px;
+        }
+
+        .hero {
+          text-align: center;
+          justify-content: center;
+        }
+
+        .hero h1 {
+          font-size: 38px;
+        }
+
+        .hero p {
+          font-size: 16px;
+          margin: auto auto 30px;
+        }
+
+        h2 {
+          font-size: 30px;
+        }
+      }
+
+      /* ==========================
+  OFFER SECTION
+========================== */
+
+      .offers {
+        background: linear-gradient(180deg, #fff9f5, #fadcd9);
+      }
+
+      .section-title {
+        text-align: center;
+
+        max-width: 700px;
+
+        margin: auto;
+
+        margin-bottom: 60px;
+      }
+
+      .offer-grid {
+        display: grid;
+
+        grid-template-columns: repeat(3, 1fr);
+
+        gap: 30px;
+      }
+
+      .offer-card {
+        padding: 35px;
+
+        border-radius: 30px;
+
+        background: rgba(255, 255, 255, 0.55);
+
+        backdrop-filter: blur(18px);
+
+        border: 1px solid rgba(255, 255, 255, 0.6);
+
+        box-shadow: var(--shadow);
+
+        transition: 0.4s;
+      }
+
+      .offer-card:hover {
+        transform: translateY(-10px) scale(1.03);
+      }
+
+      .offer-card h3 {
+        font-size: 28px;
+
+        margin-bottom: 15px;
+
+        color: var(--rose);
+      }
+
+      .offer-card p {
+        font-size: 15px;
+      }
+
+      @media (max-width: 900px) {
+        .offer-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- ======================
+    NAVBAR
+====================== -->
+
+    <header id="header">
+      <nav>
+        <div class="logo">Aura<span>Beauty</span></div>
+
+        <a href="#appointment" class="btn nav-btn"> Book Appointment </a>
+      </nav>
+    </header>
+
+    <!-- ======================
+    HERO SECTION
+====================== -->
+
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            ✨ Luxury Beauty Experience in Belapur CBD
+          </div>
+
+          <h1>Reveal Your Natural Beauty With Expert Care.</h1>
+
+          <p>
+            Experience premium salon treatments, bridal makeup, hair spa, skin
+            rejuvenation, and personalized beauty services from our certified
+            professionals.
+          </p>
+
+          <a href="#services" class="btn"> Explore Services </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================
+   SPECIAL OFFERS
+====================== -->
+
+    <section class="offers">
+      <div class="container">
+        <div class="section-title">
+          <h2>Exclusive Beauty Offers</h2>
+
+          <p>
+            Pamper yourself with our luxurious treatments and enjoy special
+            savings crafted just for you.
+          </p>
+        </div>
+
+        <div class="offer-grid">
+          <!-- Offer 1 -->
+
+          <div class="offer-card">
+            <h3>20% OFF</h3>
+
+            <p>
+              Enjoy a flat 20% discount on your first visit and experience our
+              premium beauty services.
+            </p>
+          </div>
+
+          <!-- Offer 2 -->
+
+          <div class="offer-card">
+            <h3>Bridal Packages</h3>
+
+            <p>
+              Complete bridal makeup, hairstyling and pre-wedding beauty rituals
+              designed to make your special day unforgettable.
+            </p>
+          </div>
+
+          <!-- Offer 3 -->
+
+          <div class="offer-card">
+            <h3>Hair Spa Luxury</h3>
+
+            <p>
+              Get nourishing premium hair spa treatments starting from ₹1,499
+              and restore natural shine.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
+<!-- ======================
+        SERVICES SECTION
+====================== -->
+
+<section class="services" id="services">
+  <div class="container">
+    <div class="section-title">
+      <h2>Our Premium Services</h2>
+
+      <p>
+        Indulge in luxurious beauty experiences tailored by our expert
+        professionals using world-class products and techniques.
+      </p>
+    </div>
+
+    <div class="service-grid">
+      <!-- Hair Styling -->
+
+      <div class="service-card">
+        <img
+          src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=800&q=80"
+          alt="Luxury Hair Styling"
+        />
+
+        <div class="service-content">
+          <h3>Hair Styling</h3>
+
+          <p>
+            Professional haircut, styling, blow-dry and trendy looks designed to
+            enhance your personality.
+          </p>
+
+          <span> Starting ₹699 </span>
+        </div>
+      </div>
+
+      <!-- Hair Spa -->
+
+      <div class="service-card">
+        <img
+          src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=800&q=80"
+          alt="Hair Spa"
+        />
+
+        <div class="service-content">
+          <h3>Premium Hair Spa</h3>
+
+          <p>
+            Deep nourishment and repair treatment using premium products for
+            silky and healthy hair.
+          </p>
+
+          <span> Starting ₹1,499 </span>
+        </div>
+      </div>
+
+      <!-- Facial -->
+
+      <div class="service-card">
+        <img
+          src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=800&q=80"
+          alt="Facial Treatment"
+        />
+
+        <div class="service-content">
+          <h3>Facial Treatments</h3>
+
+          <p>
+            Relaxing facials and skin rejuvenation therapies that restore your
+            natural glow.
+          </p>
+
+          <span> Starting ₹1,299 </span>
+        </div>
+      </div>
+
+      <!-- Bridal Makeup -->
+
+      <div class="service-card">
+        <img
+          src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80"
+          alt="Bridal Makeup"
+        />
+
+        <div class="service-content">
+          <h3>Bridal Makeup</h3>
+
+          <p>
+            Luxury bridal packages including makeup, hairstyle and complete
+            wedding-day beauty preparation.
+          </p>
+
+          <span> Starting ₹9,999 </span>
+        </div>
+      </div>
+
+      <!-- Nail Art -->
+
+      <div class="service-card">
+        <img
+          src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=800&q=80"
+          alt="Nail Art"
+        />
+
+        <div class="service-content">
+          <h3>Nail Art</h3>
+
+          <p>
+            Creative nail designs, gel polish and premium nail care services for
+            elegant hands.
+          </p>
+
+          <span> Starting ₹799 </span>
+        </div>
+      </div>
+
+      <!-- Skin Care -->
+
+      <div class="service-card">
+        <img
+          src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=800&q=80"
+          alt="Skin Care"
+        />
+
+        <div class="service-content">
+          <h3>Skin Care</h3>
+
+          <p>
+            Advanced skincare solutions with premium products for healthy,
+            radiant and youthful skin.
+          </p>
+
+          <span> Starting ₹999 </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================
+          WHY CHOOSE US
+  ====================== -->
+
+<section class="why-us">
+  <div class="container">
+    <div class="section-title">
+      <h2>Why Choose Aura Beauty?</h2>
+
+      <p>
+        We combine expertise, luxury and hygiene standards to give you an
+        exceptional salon experience.
+      </p>
+    </div>
+
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="icon">👩‍🎓</div>
+
+        <h3>Certified Beauticians</h3>
+
+        <p>
+          Highly trained professionals with years of experience in modern beauty
+          treatments and bridal artistry.
+        </p>
+      </div>
+
+      <div class="why-card">
+        <div class="icon">🌿</div>
+
+        <h3>Premium Products</h3>
+
+        <p>
+          We use trusted international and professional beauty brands for safe
+          and effective results.
+        </p>
+      </div>
+
+      <div class="why-card">
+        <div class="icon">✨</div>
+
+        <h3>100% Hygienic Environment</h3>
+
+        <p>
+          Sanitized tools, clean spaces and strict hygiene protocols for your
+          comfort and safety.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<style>
+  /* ==========================
+         SERVICES STYLES
+  ========================== */
+
+  .services {
+    background: var(--cream);
+  }
+
+  .service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+    gap: 35px;
+  }
+
+  .service-card {
+    background: rgba(255, 255, 255, 0.65);
+
+    border-radius: 30px;
+
+    overflow: hidden;
+
+    box-shadow: var(--shadow);
+
+    backdrop-filter: blur(15px);
+
+    transition: 0.5s;
+  }
+
+  .service-card:hover {
+    transform: translateY(-12px);
+
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.18);
+  }
+
+  .service-card img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+  }
+
+  .service-content {
+    padding: 28px;
+  }
+
+  .service-content h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+
+  .service-content span {
+    display: inline-block;
+
+    margin-top: 15px;
+
+    background: var(--rose);
+
+    color: white;
+
+    padding: 10px 18px;
+
+    border-radius: 50px;
+
+    font-weight: 600;
+  }
+
+  /* ==========================
+        WHY CHOOSE US
+  ========================== */
+
+  .why-us {
+    background: linear-gradient(135deg, #fadcd9, #fff9f5);
+  }
+
+  .why-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+  }
+
+  .why-card {
+    background: rgba(255, 255, 255, 0.6);
+
+    backdrop-filter: blur(18px);
+
+    padding: 40px 30px;
+
+    border-radius: 30px;
+
+    text-align: center;
+
+    box-shadow: var(--shadow);
+
+    transition: 0.4s;
+  }
+
+  .why-card:hover {
+    transform: translateY(-10px) scale(1.03);
+  }
+
+  .icon {
+    font-size: 45px;
+
+    margin-bottom: 20px;
+  }
+
+  .why-card h3 {
+    margin-bottom: 15px;
+
+    font-size: 24px;
+  }
+
+  @media (max-width: 900px) {
+    .why-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  /* ==========================
+        APPOINTMENT SECTION
+  ========================== */
+
+  .appointment {
+    background: linear-gradient(rgba(28, 28, 28, 0.75), rgba(28, 28, 28, 0.75)),
+      url("https://images.unsplash.com/photo-1522337660859-02fbefca4702?auto=format&fit=crop&w=1600&q=80");
+
+    background-size: cover;
+
+    background-position: center;
+
+    text-align: center;
+
+    color: white;
+  }
+
+  .appointment p {
+    color: #f5f5f5;
+
+    max-width: 700px;
+
+    margin: 20px auto 35px;
+  }
+
+  .whatsapp-btn {
+    background: #25d366;
+
+    box-shadow: 0 15px 35px rgba(37, 211, 102, 0.4);
+  }
+
+  .whatsapp-btn:hover {
+    background: #1ebe5d;
+  }
+
+  /* ==========================
+         TESTIMONIALS
+  ========================== */
+
+  .testimonials {
+    background: #fff9f5;
+  }
+
+  .testimonial-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+  }
+
+  .testimonial-card {
+    background: rgba(255, 255, 255, 0.75);
+
+    backdrop-filter: blur(15px);
+
+    padding: 35px;
+
+    border-radius: 30px;
+
+    box-shadow: var(--shadow);
+
+    transition: 0.4s;
+  }
+
+  .testimonial-card:hover {
+    transform: translateY(-8px);
+  }
+
+  .stars {
+    font-size: 22px;
+
+    margin-bottom: 15px;
+
+    color: #d4a373;
+  }
+
+  .customer {
+    margin-top: 20px;
+
+    font-weight: 700;
+  }
+
+  @media (max-width: 900px) {
+    .testimonial-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+<!-- ======================
+      BOOK APPOINTMENT
+  ====================== -->
+
+<section class="appointment" id="appointment">
+  <div class="container">
+    <h2>Book Your Luxury Beauty Session Today</h2>
+
+    <p>
+      Talk directly with our beauty experts on WhatsApp and reserve your
+      preferred time slot in just one click.
+    </p>
+
+    <a href="https://wa.me/919999999999" class="btn whatsapp-btn">
+      Book On WhatsApp
+    </a>
+  </div>
+</section>
+
+<!-- ======================
+         TESTIMONIALS
+  ====================== -->
+
+<section class="testimonials">
+  <div class="container">
+    <div class="section-title">
+      <h2>What Our Clients Say</h2>
+
+      <p>
+        Trusted by hundreds of women across Belapur CBD for premium beauty
+        experiences.
+      </p>
+    </div>
+
+    <div class="testimonial-grid">
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+
+        <p>
+          The bridal makeup was absolutely stunning. The team made me feel
+          confident and beautiful on my special day.
+        </p>
+
+        <div class="customer">— Priya Sharma</div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+
+        <p>
+          The salon ambience feels like a luxury spa. Their hair spa treatment
+          completely transformed my hair.
+        </p>
+
+        <div class="customer">— Neha Patil</div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+
+        <p>
+          Very professional staff, excellent hygiene and premium products. I
+          highly recommend Aura Beauty Studio.
+        </p>
+
+        <div class="customer">— Riya Mehta</div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ======================
+      LOCATION & TIMINGS
+====================== -->
+
+<section class="location">
+
+  <div class="container">
+  
+  <div class="section-title">
+  
+  <h2>
+  Visit Aura Beauty Studio
+  </h2>
+  
+  <p>
+  Experience luxury beauty services in the heart of Belapur CBD, Navi Mumbai.
+  </p>
+  
+  </div>
+  
+  
+  <div class="location-grid">
+  
+  
+  <!-- Google Map -->
+  
+  <div class="map-card">
+  
+  <div class="map-placeholder">
+  
+  📍 Google Maps Location
+  
+  </div>
+  
+  </div>
+  
+  
+  
+  <!-- Salon Details -->
+  
+  
+  <div class="details-card">
+  
+  
+  <h3>
+  Opening Hours
+  </h3>
+  
+  
+  <ul>
+  
+  <li>
+  Monday - Saturday:
+  <span>10:00 AM - 8:30 PM</span>
+  </li>
+  
+  
+  <li>
+  Sunday:
+  <span>11:00 AM - 6:00 PM</span>
+  </li>
+  
+  
+  </ul>
+  
+  
+  <hr>
+  
+  
+  <h3>
+  Contact Us
+  </h3>
+  
+  
+  <p>
+  📞 +91 99999 99999
+  </p>
+  
+  
+  <p>
+  📍 Aura Beauty Studio,
+  Belapur CBD, Navi Mumbai
+  </p>
+  
+  
+  </div>
+  
+  
+  </div>
+  
+  
+  </div>
+  
+  
+  </section>
+  
+  
+  
+  <!-- ======================
+            FOOTER
+  ====================== -->
+  
+  
+  <footer>
+  
+  
+  <div class="footer-content">
+  
+  
+  <h2>
+  Aura Beauty Studio
+  </h2>
+  
+  
+  <p>
+  Luxury beauty, premium care and confidence 
+  crafted with elegance.
+  </p>
+  
+  
+  <div class="social-links">
+  
+  
+  <a href="#">
+  Instagram</a>
+  
+  
+  <a href="#">
+  WhatsApp</a>
+  
+  
+  <a href="#">
+  Call</a>
+  
+  
+  </div>
+  
+  
+  <p class="copyright">
+  
+  © 2026 Aura Beauty Studio.
+  All Rights Reserved.
+  
+  </p>
+  
+  
+  </div>
+  
+  
+  </footer>
+  
+  
+  
+  <!-- ======================
+       FLOATING WHATSAPP
+  ====================== -->
+  
+  
+  <a 
+  href="https://wa.me/919999999999"
+  class="floating-whatsapp">
+  
+  💬
+  
+  </a>
+  
+  
+  
+  <style>
+  
+  /* ==========================
+        LOCATION SECTION
+  ========================== */
+  
+  
+  .location{
+  
+  background:
+  linear-gradient(
+  180deg,
+  #FFF9F5,
+  #FADCD9);
+  
+  }
+  
+  
+  .location-grid{
+  
+  display:grid;
+  
+  grid-template-columns:
+  1.2fr 1fr;
+  
+  gap:35px;
+  
+  }
+  
+  
+  .map-card,
+  .details-card{
+  
+  background:
+  rgba(255,255,255,.65);
+  
+  backdrop-filter:
+  blur(18px);
+  
+  border-radius:35px;
+  
+  padding:35px;
+  
+  box-shadow:var(--shadow);
+  
+  }
+  
+  
+  .map-placeholder{
+  
+  height:320px;
+  
+  border-radius:25px;
+  
+  display:flex;
+  
+  justify-content:center;
+  
+  align-items:center;
+  
+  font-size:24px;
+  
+  background:
+  #f3e6dd;
+  
+  color:#1C1C1C;
+  
+  font-weight:600;
+  
+  }
+  
+  
+  .details-card h3{
+  
+  font-size:28px;
+  
+  margin-bottom:20px;
+  
+  }
+  
+  
+  .details-card ul{
+  
+  list-style:none;
+  
+  margin-bottom:25px;
+  
+  }
+  
+  
+  .details-card li{
+  
+  margin:15px 0;
+  
+  display:flex;
+  
+  justify-content:space-between;
+  
+  gap:15px;
+  
+  }
+  
+  
+  .details-card hr{
+  
+  border:none;
+  
+  height:1px;
+  
+  background:#ddd;
+  
+  margin:25px 0;
+  
+  }
+  
+  
+  
+  /* ==========================
+           FOOTER
+  ========================== */
+  
+  
+  footer{
+  
+  background:#1C1C1C;
+  
+  color:white;
+  
+  padding:70px 8%;
+  
+  text-align:center;
+  
+  }
+  
+  
+  .footer-content h2{
+  
+  color:#D4A373;
+  
+  font-size:38px;
+  
+  }
+  
+  
+  .footer-content p{
+  
+  color:#ddd;
+  
+  margin:18px auto;
+  
+  max-width:500px;
+  
+  }
+  
+  
+  .social-links{
+  
+  margin:30px 0;
+  
+  }
+  
+  
+  .social-links a{
+  
+  color:white;
+  
+  text-decoration:none;
+  
+  margin:0 15px;
+  
+  padding:12px 22px;
+  
+  border:1px solid rgba(255,255,255,.25);
+  
+  border-radius:50px;
+  
+  transition:.4s;
+  
+  display:inline-block;
+  
+  }
+  
+  
+  .social-links a:hover{
+  
+  background:#D4A373;
+  
+  border-color:#D4A373;
+  
+  transform:translateY(-5px);
+  
+  }
+  
+  
+  
+  /* ==========================
+     FLOATING WHATSAPP
+  ========================== */
+  
+  
+  .floating-whatsapp{
+  
+  position:fixed;
+  
+  right:25px;
+  
+  bottom:25px;
+  
+  width:65px;
+  
+  height:65px;
+  
+  background:#25D366;
+  
+  color:white;
+  
+  font-size:32px;
+  
+  text-decoration:none;
+  
+  display:flex;
+  
+  justify-content:center;
+  
+  align-items:center;
+  
+  border-radius:50%;
+  
+  box-shadow:
+  0 15px 40px rgba(37,211,102,.45);
+  
+  z-index:1000;
+  
+  transition:.4s;
+  
+  }
+  
+  
+  .floating-whatsapp:hover{
+  
+  transform:
+  scale(1.12);
+  
+  }
+  
+  
+  /* ==========================
+        MOBILE RESPONSIVE
+  ========================== */
+  
+  
+  @media(max-width:900px){
+  
+  
+  .location-grid{
+  
+  grid-template-columns:1fr;
+  
+  }
+  
+  
+  .details-card li{
+  
+  flex-direction:column;
+  
+  }
+  
+  
+  .footer-content h2{
+  
+  font-size:30px;
+  
+  }
+  
+  
+  }
+  
+  </style>
+  
+  
+  
+  <script>
+  
+  
+  /* ==========================
+       STICKY NAVBAR EFFECT
+  ========================== */
+  
+  
+  const header =
+  document.getElementById("header");
+  
+  
+  window.addEventListener("scroll",()=>{
+  
+  
+  if(window.scrollY > 50){
+  
+  header.classList.add("active");
+  
+  }
+  
+  else{
+  
+  header.classList.remove("active");
+  
+  }
+  
+  
+  });
+  
+  
+  
+  
+  /* ==========================
+      SCROLL REVEAL ANIMATION
+  ========================== */
+  
+  
+  const revealElements =
+  document.querySelectorAll(
+  ".service-card, .offer-card, .why-card, .testimonial-card, .map-card, .details-card"
+  );
+  
+  
+  const observer =
+  new IntersectionObserver(entries => {
+  
+  
+  entries.forEach(entry=>{
+  
+  
+  if(entry.isIntersecting){
+  
+  
+  entry.target.style.opacity = "1";
+  
+  
+  entry.target.style.transform =
+  "translateY(0)";
+  
+  
+  }
+  
+  
+  });
+  
+  
+  },{
+  
+  threshold:0.15
+  
+  });
+  
+  
+  
+  revealElements.forEach(element=>{
+  
+  
+  element.style.opacity="0";
+  
+  
+  element.style.transform=
+  "translateY(50px)";
+  
+  
+  element.style.transition=
+  "all .8s ease";
+  
+  
+  observer.observe(element);
+  
+  
+  });
+  
+  
+  </script>
+  
+  
+  </body>
+  
+  </html>
